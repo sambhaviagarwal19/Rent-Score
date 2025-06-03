@@ -65,11 +65,11 @@ A Random Forest-powered machine learning solution for customer risk evaluation i
 
 <table>
   <tr>
-    <td><img src="Rent Score output/backend_time_response.jpeg" alt="UI" width="400"/></td>
-    <td><img src="Rent Score output/Database_response.jpeg" alt="Risk Score Bar" width="400"/></td>
+    <td><img src="output/backend_time_response.jpeg" alt="UI" width="400"/></td>
+    <td><img src="output/Database_response.jpeg" alt="Risk Score Bar" width="400"/></td>
   </tr>
   <tr>
-    <td><img src="Rent Score output/heatmap.jpeg" alt="API Response" width="400"/></td>
+    <td><img src="output/heatmap.jpeg" alt="API Response" width="400"/></td>
   </tr>
 </table>
 
