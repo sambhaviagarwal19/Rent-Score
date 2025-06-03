@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .speedometer {
+    width: 500px;
+    height: 500px;
+    padding: 100px;
+    border-radius: 50%;
+    background:
+      radial-gradient(#ffff 0 0) content-box,
+      conic-gradient(
+        from -90deg, 
+        var(--c1, #C1262C) 36deg,
+        var(--c2, #DB5C23) 0 72deg,
+        var(--c3, #F69220) 0 108deg, 
+        var(--c4, #8BA247) 0 144deg, 
+        var(--c5, #23B473) 0 180deg,
+        #0000 0
+      );
+    position: relative;
+  }
+  
+  .needle {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    padding: 150px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(calc(var(--score) * 36deg - 180deg)); /* Fix the calculation */
+    border-radius: 50%; 
+    background: 
+      conic-gradient(
+        from 175deg at 50% 55%,
+        #ccc 2deg,
+        #ea1c98 3deg 7deg,
+        #ccc 8deg 10deg,
+        #0000 0
+      ) 0 -217px no-repeat, 
+      radial-gradient(
+        #ea1c98 0 50%,
+        #ccc 51%
+      ) content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-out; /* Add smooth animation */
+  }
+  
+  .score { 
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    color: #eee;
+  }
+  
